@@ -7,8 +7,6 @@ import org.joda.money.Money;
 
 import java.util.List;
 
-import static org.joda.money.CurrencyUnit.EUR;
-
 @RequiredArgsConstructor
 public class HighestApplicableDiscountFinder {
 
@@ -20,6 +18,6 @@ public class HighestApplicableDiscountFinder {
                 .filter(promotion -> promotion.isApplicable(basket))
                 .map(promotion -> promotion.calculateDiscount(basket))
                 .max(Money::compareTo)
-                .orElse(Money.of(EUR, 0));
+                .orElse(promotionConfigurator.getNoPromotion());
     }
 }

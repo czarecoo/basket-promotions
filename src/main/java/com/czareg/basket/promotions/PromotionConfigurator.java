@@ -16,4 +16,8 @@ public class PromotionConfigurator {
                         Money.of(EUR, 10))
         );
     }
+
+    public Money getNoPromotion() {
+        return Money.of(EUR, 0);
+    }
 }
