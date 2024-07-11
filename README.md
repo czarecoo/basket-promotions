@@ -1,4 +1,4 @@
-This is the sulution I created for my technical interview. Below is the problem I was given:
+This is the solution I created for my technical interview. Below is the problem I was given:
 
 # Basket Promotion Project
 
